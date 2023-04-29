@@ -1,5 +1,7 @@
 # Astro Starter Kit: Basics
 
+[👉🏽](https://chaofei.netlify.app/)
+
 ```
 npm create astro@latest -- --template basics
 ```
