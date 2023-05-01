@@ -9,10 +9,11 @@ export default function Greeting({messages}) {
 
   return (
     <div>
-      <h3>{greeting}! Thank you for visiting!</h3>
-      <button onClick={() => setGreeting(randomMessage())}>
-        New Greeting
-      </button>
+      <h3>{greeting}! Thank you for visiting!
+        <button onClick={() => setGreeting(randomMessage())}>
+            New Greeting
+        </button>
+      </h3>
     </div>
   );
 }
