@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Greeting from "../components/Greeting.jsx";
+import Button from '../components/Button.vue'
 
 // import BaseLayout from '../layouts/BaseLayout.astro';
 
@@ -36,6 +37,14 @@ const pageTitle = "Home Page";
     />
   </ul>
   <Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} />
+  <p>
+    `client:media="(max-width: 636px)"`即只有当屏幕小于 636 时才可交互：
+  </p>
+  <Button client:media="(max-width: 636px)"/>
+  <p>
+    `client:visible`即只有当元素进入视窗才可交互：
+  </p>
+  <Button client:visible/>
 </Layout>
 
 <style>
